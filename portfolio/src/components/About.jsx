@@ -8,23 +8,33 @@ function About() {
       <div className="container about-container fade-in-up">
         <div className="about-text">
           <h2>About Me</h2>
+
           <p>
-            Hello! I’m <b>Tilak Saurabh</b>, currently <b>pursuing my MCA (Master of Computer Applications)</b> 
-            with a strong passion for <b>software development</b> and <b>problem-solving</b>. 
-            I have a solid foundation in <b>Java</b> and <b>Full Stack Web Development</b> using 
-            technologies like <b>React.js, Node.js, Express.js, and MySQL</b>.
+            Hello! I’m <b>Tilak Saurabh</b>, a passionate <b>Full Stack Java Developer</b> 
+            currently pursuing my <b>MCA (Master of Computer Applications)</b> from 
+            <b> Savitribai Phule Pune University</b>. With a strong foundation in <b>Java</b>, 
+            <b>React.js</b>, <b>Node.js</b>, <b>Express.js</b>, and <b>MySQL</b>, I love 
+            building scalable and efficient web applications.
           </p>
 
           <p>
-            I enjoy creating clean, responsive, and user-focused applications that make a real impact. 
-            My academic projects and personal work have helped me develop a deep understanding of 
-            both <b>frontend</b> and <b>backend</b> technologies, as well as strong analytical and teamwork skills.
+            I have hands-on experience as a <b>Java Full Stack Intern</b> at 
+            <b> G-Soft Solutions Pvt. Ltd.</b>, where I contributed to developing RESTful APIs 
+            using <b>Spring Boot</b> and <b>React.js</b> for modern web systems. 
+            I also trained as a <b>Full Stack Development Trainee</b> at 
+            <b> Giri’s Tech Hub Pvt. Ltd.</b>, mastering end-to-end development and best coding practices.
           </p>
 
           <p>
-            As a motivated fresher, I’m seeking an opportunity to begin my professional journey, 
-            contribute to impactful projects, and learn from experienced mentors while continuously 
-            enhancing my technical expertise.
+            My projects — including the <b>Online Job Portal (Quick Start Career)</b> and 
+            <b> Employee Management System</b> — reflect my expertise in REST API development, 
+            database integration, and modern UI design. I’m deeply interested in backend architecture, 
+            API optimization, and crafting seamless user experiences.
+          </p>
+
+          <p>
+            As a motivated fresher, I aim to leverage my technical skills and problem-solving mindset 
+            to contribute to innovative projects and grow as a professional developer.
           </p>
 
           <a href="#skills" className="btn">View My Skills</a>

@@ -5,25 +5,32 @@ import { FaBriefcase } from "react-icons/fa";
 function Experience() {
   const experiences = [
     {
-      year: "JUNE 2025 – Present",
+      year: "June 2025 – Present",
       role: "Java Developer Intern",
       company: "Gsoft Solutions Pvt. Ltd.",
       details:
-        "Working on real-time Java projects focusing on backend logic, debugging, and REST API integration using Spring Boot and MySQL.",
+        "Contributing to backend development using Java, Spring Boot, and MySQL. Working on real-time projects involving RESTful API design, debugging, and performance optimization.",
     },
     {
       year: "2024 – 2025",
-      role: "Java Full Stack Developer (Academic Project)",
+      role: "Full Stack Developer (Academic Project)",
       company: "Quick Start Career",
       details:
-        "Developed a full-stack job portal web app with user authentication, job posting, and dynamic REST APIs using Node.js, Express, React, and MySQL.",
+        "Developed an Online Job Portal web application using React.js, Node.js, Express, and MySQL. Implemented REST APIs, job posting modules, and dynamic candidate dashboards as part of MCA academic project.",
+    },
+    {
+      year: "2024 – 2025",
+      role: "Java Full Stack Development Trainee",
+      company: "Giri’s Tech Hub Pvt. Ltd., Pune",
+      details:
+        "Trained in Full Stack Java Development with hands-on experience in Core Java, Spring Boot, React.js, and REST API implementation. Gained exposure to complete project lifecycle and version control using Git & GitHub.",
     },
   ];
 
   return (
     <section id="experience" className="experience">
       <div className="container fade-in-up">
-        <h2 className="experience-title">Professional Experience</h2>
+        <h2 className="experience-title">Experience</h2>
         <div className="timeline">
           {experiences.map((exp, index) => (
             <div key={index} className="timeline-item">

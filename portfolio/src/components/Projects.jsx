@@ -5,28 +5,41 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 function Projects() {
   const projects = [
     {
-      title: "Online Job Portal",
+      title: "Online Job Portal – Quick Start Career",
       description:
-        "A full-featured job portal where HRs can post jobs and candidates can apply online. Integrated authentication, job filtering, and REST APIs for seamless user experience.",
-      tech: "React.js • Node.js • Express • MySQL • REST API • Postman",
+        "A full-stack job portal enabling HRs to post jobs and candidates to apply online with authentication, job filtering, and role-based access.",
+      tech: "React.js • Node.js • Express.js • MySQL • REST API",
       liveLink: "https://quickstartcareer.in/",
       github: "https://github.com/SaurabhTilak05/OnlineJobPortalApplication",
     },
     {
       title: "Department & Employee Management System",
       description:
-        "A Java-based desktop application for managing employee and department records using file handling operations — add, view, update, delete, and search.",
-      tech: "Node.js • Express • EJS • MySQL",
-        liveLink: "https://quickstartcareer.in/",
+        "A Java-based project for managing employee and department data using file handling — featuring add, update, search, and delete functionalities.",
+      tech: "Java • File Handling • OOPs • Core Java",
       github: "https://github.com/SaurabhTilak05/NodeJS/tree/master/EmplDeptMiniProject",
     },
     {
       title: "Diwali Celebration Website",
       description:
-        "An interactive festive website built with React and custom animations — showcasing glowing diyas, lights, and celebratory effects.",
+        "A colorful React-based festive website featuring glowing diyas, interactive lights, and smooth animations to celebrate Diwali.",
       tech: "React.js • CSS • Animation",
       liveLink: "https://saurabhtilak05.github.io/Diwali_Project/",
       github: "https://github.com/SaurabhTilak05/Diwali_Project",
+    },
+    {
+      title: "Student Record Management System",
+      description:
+        "Console-based Java application using file handling for maintaining student details with CRUD operations and object-oriented design.",
+      tech: "Java • File Handling • OOPs",
+      github: "https://github.com/SaurabhTilak05/Student-Record-Management",
+    },
+    {
+      title: "Spring Boot REST API Development",
+      description:
+        "Developed RESTful APIs using Spring Boot and MySQL for structured CRUD operations, data validation, and integration testing with Postman.",
+      tech: "Spring Boot • MySQL • REST API • Maven",
+      github: "https://github.com/SaurabhTilak05/spring-boot-crud-app-database",
     },
   ];
 
@@ -34,7 +47,9 @@ function Projects() {
     <section id="projects" className="projects">
       <div className="container fade-in-up">
         <h2 className="projects-title">My Projects</h2>
-        <div className="projects-grid">
+
+        {/* Horizontal Scroll Section */}
+        <div className="projects-scroll">
           {projects.map((p, i) => (
             <div key={i} className="project-card">
               <div className="project-content">
@@ -42,7 +57,8 @@ function Projects() {
                 <p>{p.description}</p>
                 <span className="tech-stack">{p.tech}</span>
               </div>
-              <div className="project-links button-group">
+
+              <div className="project-links">
                 {p.liveLink && (
                   <a
                     href={p.liveLink}
@@ -53,14 +69,16 @@ function Projects() {
                     Live <FaExternalLinkAlt className="icon" />
                   </a>
                 )}
-                <a
-                  href={p.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn github-btn"
-                >
-                  GitHub <FaGithub className="icon" />
-                </a>
+                {p.github && (
+                  <a
+                    href={p.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn github-btn"
+                  >
+                    GitHub <FaGithub className="icon" />
+                  </a>
+                )}
               </div>
             </div>
           ))}
