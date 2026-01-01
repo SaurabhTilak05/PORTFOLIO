@@ -9,16 +9,16 @@ function Hero() {
       <div className="overlay"></div>
       <div className="container hero-container fade-in-up">
         <h1>
-          Hi, I'm <span className="highlight">Tilak Saurabh</span>
+          Hi, I'm <span className="highlight">Saurabh Tilak</span>
         </h1>
 
         <TypeAnimation
           sequence={[
-            "React Developer 💻",
+            "Full Stack Developer 💻",
             2000,
-            "Java Programmer ☕",
+            "Java Backend Developer ☕",
             2000,
-            "Full Stack Learner 🚀",
+            "MERN Stack Developer 🚀",
             2000,
           ]}
           speed={50}

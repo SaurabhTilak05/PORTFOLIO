@@ -5,25 +5,18 @@ import { FaBriefcase } from "react-icons/fa";
 function Experience() {
   const experiences = [
     {
-      year: "June 2025 – Present",
-      role: "Java Developer Intern",
-      company: "Gsoft Solutions Pvt. Ltd.",
+      year: "May 2025 – Nov 2025",
+      role: "Jr. Software Developer (Intern / Project Trainee)",
+      company: "Creazione Software, Pune",
       details:
-        "Contributing to backend development using Java, Spring Boot, and MySQL. Working on real-time projects involving RESTful API design, debugging, and performance optimization.",
+        "Worked on a real-time Online Job Portal. Developed RESTful APIs using Node.js, Express.js, and MySQL. Implemented JWT authentication and Nodemailer for notifications. Built responsive UI using React.js and Bootstrap.",
     },
     {
-      year: "2024 – 2025",
-      role: "Full Stack Developer (Academic Project)",
-      company: "Quick Start Career",
-      details:
-        "Developed an Online Job Portal web application using React.js, Node.js, Express, and MySQL. Implemented REST APIs, job posting modules, and dynamic candidate dashboards as part of MCA academic project.",
-    },
-    {
-      year: "2024 – 2025",
-      role: "Java Full Stack Development Trainee",
+      year: "Aug 2024 – Apr 2025",
+      role: "Full Stack Development Trainee",
       company: "Giri’s Tech Hub Pvt. Ltd., Pune",
       details:
-        "Trained in Full Stack Java Development with hands-on experience in Core Java, Spring Boot, React.js, and REST API implementation. Gained exposure to complete project lifecycle and version control using Git & GitHub.",
+        "Completed Java Full Stack training covering Core Java, OOP, Spring Boot, REST APIs, and MySQL. Built backend applications using Spring Boot and tested APIs with Postman. Developed responsive frontend using React.js.",
     },
   ];
 

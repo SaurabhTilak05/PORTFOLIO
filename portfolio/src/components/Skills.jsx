@@ -3,11 +3,12 @@ import "./Skills.css";
 
 function Skills() {
   const skills = [
-    "Core Java", "Advanced Java", "Spring Boot", 
-    "HTML", "CSS", "JavaScript", 
-    "React.js", "Node.js", "Express.js", 
-    "MySQL", "Git", "GitHub", 
-    "REST API", "Postman", "JIRA"
+    "Java", "JavaScript", "PHP", "SQL",
+    "React.js", "Bootstrap", "HTML", "CSS", "jQuery", "AJAX", "Yii2",
+    "Spring Boot", "Spring MVC", "Node.js", "Express.js", "REST APIs", "JWT",
+    "MySQL", "MongoDB",
+    "Data Structures & Algorithms (DSA)", "OOP", "Operating Systems",
+    "Git", "GitHub", "Postman", "VS Code", "STS", "MySQL Workbench"
   ];
 
   return (

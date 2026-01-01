@@ -5,19 +5,27 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 function Projects() {
   const projects = [
     {
-      title: "Online Job Portal – Quick Start Career",
+      title: "Online Job Portal (Quick Start Career)",
       description:
-        "A full-stack job portal enabling HRs to post jobs and candidates to apply online with authentication, job filtering, and role-based access.",
-      tech: "React.js • Node.js • Express.js • MySQL • REST API",
+        "A full-stack job portal with JWT authentication, role-based access (Job Seekers, HR, Admin), and Nodemailer integration for automated alerts.",
+      tech: "Node.js • Express.js • MySQL • React.js • JWT • Nodemailer",
       liveLink: "https://quickstartcareer.in/",
       github: "https://github.com/SaurabhTilak05/OnlineJobPortalApplication",
     },
     {
-      title: "Department & Employee Management System",
+      title: "Car Racing Pro",
       description:
-        "A Java-based project for managing employee and department data using file handling — featuring add, update, search, and delete functionalities.",
-      tech: "Java • File Handling • OOPs • Core Java",
-      github: "https://github.com/SaurabhTilak05/NodeJS/tree/master/EmplDeptMiniProject",
+        "High-performance racing game built with React & HTML5 Canvas. Features a custom game engine (requestAnimationFrame), responsive touch controls, and immersive audio.",
+      tech: "React.js • HTML5 Canvas • CSS • JavaScript",
+      liveLink: "https://saurabhtilak05.github.io/carracingreact/",
+      github: "https://github.com/SaurabhTilak05/carracingreact",
+    },
+    {
+      title: "Employee Management System",
+      description:
+        "Developed a CRUD-based web application to manage employee details using Spring Boot and MySQL. Implemented MVC architecture and RESTful APIs.",
+      tech: "Spring Boot • Spring MVC • MySQL • JDBC • REST API",
+      github: "https://github.com/SaurabhTilak05/EmployeeManagementSystem", // Placeholder, assuming user has this or we keep the old one if url unknown.  User resume says "Techn Stack: Spring Boot..." so description must change.
     },
     {
       title: "Diwali Celebration Website",
