@@ -26,10 +26,10 @@ function Hero() {
           className="typing"
         />
 
-        <p className="intro-text">
-          Passionate about building creative, efficient, and modern web applications.  
-          Currently pursuing MCA and eager to start my journey as a Full Stack Developer.
-        </p>
+      <p className="intro-text">
+  Passionate about developing creative, efficient, and modern web applications, and ready to start my career as a Full Stack Developer.
+</p>
+
 
         <div className="hero-buttons">
           <a href="#projects" className="btn">View My Work</a>

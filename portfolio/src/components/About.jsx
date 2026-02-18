@@ -16,9 +16,8 @@ function About() {
           </p>
 
           <p>
-            I am currently pursuing my <b>MCA (Master of Computer Applications)</b> from 
-            <b> Savitribai Phule Pune University (2025 – 2027)</b>. I also hold a 
-            <b> BCS</b> degree from <b>Dr. Babasaheb Ambedkar Marathwada University (2022 – 2025)</b> 
+            I hold a <b>BCS</b> degree from 
+            <b> Dr. Babasaheb Ambedkar Marathwada University (2022 – 2025)</b> 
             with a CGPA of <b>8.30</b>.
           </p>
 
