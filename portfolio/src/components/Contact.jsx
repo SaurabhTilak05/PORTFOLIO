@@ -39,72 +39,101 @@ function Contact() {
           feel free to reach out or send a message below.
         </p>
 
-        <div className="contact-info-grid">
-          <a href="mailto:saurabhtilak05@gmail.com" className="contact-info-card">
-            <FaEnvelope />
-            <span>saurabhtilak05@gmail.com</span>
-          </a>
-          <a href="tel:+919765303776" className="contact-info-card">
-            <FaPhoneAlt />
-            <span>+91 9765303776</span>
-          </a>
-          <div className="contact-info-card">
-            <FaMapMarkerAlt />
-            <span>Pune, Maharashtra, India</span>
-          </div>
-          <a
-            href="https://github.com/SaurabhTilak05"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="contact-info-card"
-          >
-            <FaGithub />
-            <span>GitHub</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/saurabh-tilak-502ab6350/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="contact-info-card"
-          >
-            <FaLinkedin />
-            <span>LinkedIn</span>
-          </a>
+        <div className="contact-layout">
+          <aside className="contact-info">
+            <h3 className="contact-info-heading">Contact Information</h3>
+
+            <ul className="contact-info-list">
+              <li className="contact-info-item">
+                <span className="contact-info-icon">
+                  <FaEnvelope />
+                </span>
+                <div className="contact-info-text">
+                  <span className="contact-info-label">Email</span>
+                  <a href="mailto:saurabhtilak05@gmail.com">
+                    saurabhtilak05@gmail.com
+                  </a>
+                </div>
+              </li>
+
+              <li className="contact-info-item">
+                <span className="contact-info-icon">
+                  <FaPhoneAlt />
+                </span>
+                <div className="contact-info-text">
+                  <span className="contact-info-label">Phone</span>
+                  <a href="tel:+919765303776">+91 9765303776</a>
+                </div>
+              </li>
+
+              <li className="contact-info-item">
+                <span className="contact-info-icon">
+                  <FaMapMarkerAlt />
+                </span>
+                <div className="contact-info-text">
+                  <span className="contact-info-label">Location</span>
+                  <span>Pune, Maharashtra, India</span>
+                </div>
+              </li>
+            </ul>
+
+            <div className="contact-socials">
+              <span className="contact-info-label">Find me on</span>
+              <div className="contact-social-links">
+                <a
+                  href="https://github.com/SaurabhTilak05"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
+                >
+                  <FaGithub />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/saurabh-tilak-502ab6350/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="6"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            ></textarea>
+
+            <button type="submit" className="btn send-btn">
+              <FaPaperPlane className="icon" /> Send Message
+            </button>
+          </form>
         </div>
-
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-          </div>
-
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="5"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-
-          <button type="submit" className="btn send-btn">
-            <FaPaperPlane className="icon" /> Send Message
-          </button>
-        </form>
       </div>
     </section>
   );
