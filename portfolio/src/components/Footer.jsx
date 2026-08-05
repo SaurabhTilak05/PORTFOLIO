@@ -16,6 +16,7 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="icon-link"
+            aria-label="GitHub"
           >
             <FaGithub />
           </a>
@@ -24,12 +25,14 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
             className="icon-link"
+            aria-label="LinkedIn"
           >
             <FaLinkedin />
           </a>
           <a
-            href="saurbhtilak6@gmal.com"
+            href="mailto:saurabhtilak05@gmail.com"
             className="icon-link"
+            aria-label="Email"
           >
             <FaEnvelope />
           </a>

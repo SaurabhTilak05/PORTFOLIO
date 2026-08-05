@@ -57,6 +57,14 @@ h1 {
   text-shadow: 0 0 25px #00c9a7;
 }
 
+.hero-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #e8e8e8;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+}
+
 .typing {
   font-size: 1.4rem;
   margin-bottom: 20px;
@@ -76,7 +84,8 @@ h1 {
 .hero-buttons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 16px;
   margin-bottom: 30px;
 }
 

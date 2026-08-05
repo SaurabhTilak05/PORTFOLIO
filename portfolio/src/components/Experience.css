@@ -90,6 +90,32 @@
   margin: 5px 0 10px;
 }
 
+.exp-tech {
+  color: #00c9a7 !important;
+  font-size: 0.9rem !important;
+  font-weight: 500;
+  margin-bottom: 12px !important;
+}
+
+.exp-label {
+  color: #fff !important;
+  font-size: 0.95rem !important;
+  font-weight: 600;
+  margin: 10px 0 6px !important;
+}
+
+.exp-list {
+  margin: 0 0 8px 18px;
+  padding: 0;
+  color: #d1d5db;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.exp-list li {
+  margin-bottom: 6px;
+}
+
 .timeline-content p {
   color: #d1d5db;
   font-size: 0.95rem;

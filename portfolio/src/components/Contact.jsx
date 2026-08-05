@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import { FaPaperPlane } from "react-icons/fa";
+import {
+  FaPaperPlane,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -15,14 +22,12 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you for reaching out! I’ll get back to you soon 😊");
-
-    // 🔁 Reset form after OK on alert
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    const subject = encodeURIComponent(`Portfolio message from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
+    );
+    window.location.href = `mailto:saurabhtilak05@gmail.com?subject=${subject}&body=${body}`;
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
@@ -31,8 +36,41 @@ function Contact() {
         <h2 className="contact-title">Get In Touch</h2>
         <p className="contact-subtitle">
           I’d love to hear from you! Whether you have a question, project idea, or just want to say hi —
-          feel free to send a message below.
+          feel free to reach out or send a message below.
         </p>
+
+        <div className="contact-info-grid">
+          <a href="mailto:saurabhtilak05@gmail.com" className="contact-info-card">
+            <FaEnvelope />
+            <span>saurabhtilak05@gmail.com</span>
+          </a>
+          <a href="tel:+919765303776" className="contact-info-card">
+            <FaPhoneAlt />
+            <span>+91 9765303776</span>
+          </a>
+          <div className="contact-info-card">
+            <FaMapMarkerAlt />
+            <span>Pune, Maharashtra, India</span>
+          </div>
+          <a
+            href="https://github.com/SaurabhTilak05"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-info-card"
+          >
+            <FaGithub />
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/saurabh-tilak-502ab6350/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-info-card"
+          >
+            <FaLinkedin />
+            <span>LinkedIn</span>
+          </a>
+        </div>
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">

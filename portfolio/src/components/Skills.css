@@ -63,12 +63,41 @@
 }
 
 /* === Skills Grid === */
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  animation: fadeInUp 2s ease-out;
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 24px 20px 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 201, 167, 0.45);
+  box-shadow: 0 0 22px rgba(0, 201, 167, 0.2);
+}
+
+.skill-category-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #00c9a7;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
-  animation: fadeInUp 2s ease-out;
+  gap: 16px;
 }
 
 /* === Skill Card === */

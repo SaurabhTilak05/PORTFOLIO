@@ -45,8 +45,43 @@
   color: #e0e0e0;
   font-size: 1rem;
   max-width: 600px;
-  margin: 0 auto 50px;
+  margin: 0 auto 40px;
   animation: fadeIn 1.5s ease;
+}
+
+.contact-info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.contact-info-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.contact-info-card:hover {
+  transform: translateY(-4px);
+  border-color: #00c9a7;
+  box-shadow: 0 0 18px rgba(0, 201, 167, 0.35);
+}
+
+.contact-info-card svg {
+  color: #00c9a7;
+  flex-shrink: 0;
 }
 
 .contact-form {

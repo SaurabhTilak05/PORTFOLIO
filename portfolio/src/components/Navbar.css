@@ -54,6 +54,10 @@
   color: #fff;
   cursor: pointer;
   z-index: 1100;
+  background: transparent;
+  border: none;
+  padding: 4px;
+  line-height: 1;
 }
 
 /* 🔹 Mobile Styles */

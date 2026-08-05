@@ -9,8 +9,10 @@ function Hero() {
       <div className="overlay"></div>
       <div className="container hero-container fade-in-up">
         <h1>
-          Hi, I'm <span className="highlight">Saurabh Tilak</span>
+          Hi, I'm <span className="highlight">Tilak Saurabh</span>
         </h1>
+
+        <p className="hero-title">Java Backend Developer | Full Stack Developer</p>
 
         <TypeAnimation
           sequence={[
@@ -26,24 +28,30 @@ function Hero() {
           className="typing"
         />
 
-      <p className="intro-text">
-  Passionate about developing creative, efficient, and modern web applications, and ready to start my career as a Full Stack Developer.
-</p>
-
+        <p className="intro-text">
+          Java Developer with hands-on experience designing and developing web
+          applications using Core Java, Spring Boot, Spring MVC, REST APIs, and
+          MySQL. Strong foundation in OOP, Data Structures, SQL, and the SDLC.
+          Focused on building scalable, high-performance software and
+          contributing to real-world product teams.
+        </p>
 
         <div className="hero-buttons">
-          <a href="#projects" className="btn">View My Work</a>
+          <a href="#projects" className="btn">View Projects</a>
+          <a href={`${import.meta.env.BASE_URL}resume.pdf`} className="btn" download>
+            Download Resume
+          </a>
           <a href="#contact" className="btn btn-outline">Contact Me</a>
         </div>
 
         <div className="social-icons">
-          <a href="https://github.com/SaurabhTilak05" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/SaurabhTilak05" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/saurabh-tilak-502ab6350/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/saurabh-tilak-502ab6350/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
-          <a href="mailto:tilaksaurabh@example.com">
+          <a href="mailto:saurabhtilak05@gmail.com" aria-label="Email">
             <FaEnvelope />
           </a>
         </div>
