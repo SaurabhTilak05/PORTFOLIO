@@ -1,10 +1,12 @@
 import React from "react";
 import "./Footer.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import BackgroundLayer from "./BackgroundLayer";
 
 function Footer() {
   return (
     <footer className="footer">
+      <BackgroundLayer image="contact1.jpg" position="center center" />
       <div className="footer-content">
         <p className="footer-text">
           © {new Date().getFullYear()} <span className="highlight">Tilak Saurabh</span> | Designed & Developed with ❤️

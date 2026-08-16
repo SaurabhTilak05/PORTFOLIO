@@ -1,9 +1,19 @@
 .certificates {
-  background: linear-gradient(135deg, #0b1120, #1e3a8a, #3b82f6);
+  background: #0a121c;
+  --bg-overlay: linear-gradient(
+    180deg,
+    rgba(8, 12, 24, 0.76) 0%,
+    rgba(10, 16, 32, 0.84) 100%
+  );
   color: #fff;
   padding: 80px 0;
   position: relative;
   overflow: hidden;
+}
+
+.certificates .container {
+  position: relative;
+  z-index: 2;
 }
 
 .certificates-title {

@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import diwaliImg from "../assets/diwali.png";
+import BackgroundLayer from "./BackgroundLayer";
 
 function Projects() {
   const projects = [
@@ -97,6 +98,7 @@ function Projects() {
 
   return (
     <section id="projects" className="projects">
+      <BackgroundLayer image="skill1.jpg" position="center 42%" />
       <div className="container fade-in-up">
         <h2 className="projects-title">My Projects</h2>
 

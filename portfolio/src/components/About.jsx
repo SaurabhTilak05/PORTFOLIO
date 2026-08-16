@@ -1,10 +1,12 @@
 import React from "react";
 import "./About.css";
 import profile from "../assets/profile.jpg";
+import BackgroundLayer from "./BackgroundLayer";
 
 function About() {
   return (
     <section id="about" className="about">
+      <BackgroundLayer image="about.jpg" position="center 42%" />
       <div className="container about-container fade-in-up">
         <div className="about-text">
           <h2>About Me</h2>

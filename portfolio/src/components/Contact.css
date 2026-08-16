@@ -1,33 +1,40 @@
 .contact {
-  background: linear-gradient(135deg, #0b1120, #1e3a8a, #3b82f6);
+  background: #0a121c;
+  --bg-overlay: linear-gradient(
+    180deg,
+    rgba(6, 12, 28, 0.7) 0%,
+    rgba(8, 16, 36, 0.82) 100%
+  );
   color: #fff;
   padding: 90px 0;
   position: relative;
   overflow: hidden;
 }
 
-/* Animated background overlay */
 .contact::before {
   content: "";
   position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle at 30% 30%, rgba(0, 255, 255, 0.2), transparent 70%),
-              radial-gradient(circle at 70% 70%, rgba(255, 0, 255, 0.2), transparent 70%);
-  animation: moveBg 14s linear infinite alternate;
-  z-index: 0;
-}
-
-@keyframes moveBg {
-  0% { transform: translate(0, 0) rotate(0deg); }
-  100% { transform: translate(10%, 10%) rotate(360deg); }
-}
-
-.container {
-  position: relative;
+  inset: 0;
   z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 45%, rgba(0, 201, 255, 0.16), transparent 62%);
+  animation: contactPulse 8s ease-in-out infinite alternate;
+}
+
+@keyframes contactPulse {
+  from { opacity: 0.45; }
+  to { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact::before {
+    animation: none;
+  }
+}
+
+.contact .container {
+  position: relative;
+  z-index: 2;
 }
 
 .contact-title {

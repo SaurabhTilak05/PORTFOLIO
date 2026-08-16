@@ -1,12 +1,13 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import BackgroundLayer from "./BackgroundLayer";
 import "./Hero.css";
 
 function Hero() {
   return (
     <section id="hero" className="hero">
-      <div className="overlay"></div>
+      <BackgroundLayer image="exp1.jpg" position="center 38%" eager />
       <div className="container hero-container fade-in-up">
         <h1>
           Hi, I'm <span className="highlight">Tilak Saurabh</span>

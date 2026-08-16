@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Certificates.css";
 import CertificateCard from "./CertificateCard";
 import CertificateModal from "./CertificateModal";
+import BackgroundLayer from "./BackgroundLayer";
 
 function Certificates() {
   const base = import.meta.env.BASE_URL;
@@ -69,6 +70,7 @@ function Certificates() {
 
   return (
     <section id="certificates" className="certificates">
+      <BackgroundLayer image="skill3.jpg" position="center center" />
       <div className="container fade-in-up">
         <h2 className="certificates-title">Certificates</h2>
         <p className="certificates-intro">

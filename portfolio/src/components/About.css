@@ -1,8 +1,11 @@
-/* === Animated Gradient Background === */
 .about {
-  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #00c9a7, #6c63ff);
-  background-size: 400% 400%;
-  animation: gradientAnimation 12s ease infinite;
+  background: #0a121c;
+  --bg-overlay: linear-gradient(
+    90deg,
+    rgba(8, 12, 24, 0.82) 0%,
+    rgba(8, 12, 24, 0.7) 55%,
+    rgba(8, 12, 24, 0.62) 100%
+  );
   color: white;
   padding: 90px 0;
   position: relative;
@@ -20,7 +23,7 @@
   border-radius: 50%;
   animation: float 10s infinite ease-in-out alternate;
   filter: blur(80px);
-  z-index: 0;
+  z-index: 1;
 }
 
 .about::before {
@@ -33,12 +36,6 @@
   bottom: -100px;
   right: -80px;
   animation-delay: 4s;
-}
-
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 @keyframes float {
@@ -54,7 +51,7 @@
   flex-wrap: wrap;
   gap: 50px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* === Text === */

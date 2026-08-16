@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import BackgroundLayer from "./BackgroundLayer";
 import {
   FaPaperPlane,
   FaEnvelope,
@@ -32,6 +33,7 @@ function Contact() {
 
   return (
     <section id="contact" className="contact">
+      <BackgroundLayer image="contact.jpg" position="center center" />
       <div className="container fade-in-up">
         <h2 className="contact-title">Get In Touch</h2>
         <p className="contact-subtitle">
